@@ -2,11 +2,6 @@ version: '3'
 
 services:
   bcc-trial:
-    image: 'zlim/bcc'
+    build: .
     container_name: bcc-trial
-    volumes:
-    - /lib/modules:/lib/modules:ro
-    - /usr/src:/usr/src:ro
-    - /etc/localtime:/etc/localtime:ro
-    working_dir: '/usr/share/bcc/tools'
-    privileged: true
+    tty: true
