@@ -13,3 +13,5 @@ services:
     working_dir: /usr/share/bcc/tools
     privileged: true
     tty: true
+#    command: >
+#      /usr/bin/python3 /app/main.py

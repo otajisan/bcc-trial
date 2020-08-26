@@ -10,6 +10,10 @@ RUN apt install -y \
     lsb-release \
     ca-certificates
 
+RUN apt install -y \
+    iputils-ping \
+    net-tools
+
 RUN apt-key adv \
     --keyserver keyserver.ubuntu.com \
     --recv-keys 4052245BD4284CDD
